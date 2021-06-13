@@ -25,7 +25,37 @@ public class Person extends ReadURL {
         this.is = is;
     }
 
-    
+    public String getName() {
+        return n;
+    }
+
+    public int getAge() {
+        return Integer.parseInt(a);
+    }
+
+    public String getH1() {
+        return h1;
+    }
+
+    public String getH2() {
+        return h2;
+    }
+
+    public String getMov() {
+        return m;
+    }
+
+    public String getIc() {
+        return ic;
+    }
+
+    public String getMb() {
+        return mb;
+    }
+
+    public String getIs() {
+        return is;
+    }
 }
 
 //make an arraylist filled with people objects with coressponding attributes -> then we can traverse through this to compare
