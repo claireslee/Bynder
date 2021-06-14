@@ -68,6 +68,125 @@ public class Matches extends ReadURL {
         }
     }
 
+    public void bestMatch2() {
+        int bestMatch = 0; // greatest number
+        int counter = 0; // main counter
+        int pos = 0;
+        for (int i = 0; i < people.size(); i++) {
+            for (int j = 0; j < people.size(); j++) {
+                if (i != j) {
+                    if ((people.get(i).getAge() == people.get(j).getAge()) || 
+                    (people.get(i).getAge() == people.get(j).getAge() + 1) || 
+                    (people.get(i).getAge() == people.get(j).getAge() - 1)) {
+
+                        if (people.get(i).getMb().equals(people.get(j).getMb())) {
+                            counter+=10;
+                        }
+
+                        else if (people.get(i).getMb().substring(0,4).equals("ESFP") && (people.get(j).getMb().substring(0,4).equals("ESFJ") || 
+                        people.get(j).getMb().substring(0,4).equals("ESTP") || people.get(j).getMb().substring(0,4).equals("ISFP"))) {
+                            counter += 10;
+                        }
+
+                        else if (people.get(i).getMb().substring(0,4).equals("ESTP") && (people.get(j).getMb().substring(0,4).equals("ESTJ") || 
+                        people.get(j).getMb().substring(0,4).equals("ESFP") || people.get(j).getMb().substring(0,4).equals("INFJ"))) {
+                            counter += 10;
+                        }
+
+                        else if (people.get(i).getMb().substring(0,4).equals("ESTJ") && (people.get(j).getMb().substring(0,4).equals("ESTP") || 
+                        people.get(j).getMb().substring(0,4).equals("ESFJ") || people.get(j).getMb().substring(0,4).equals("ISTJ"))) {
+                            counter += 10;
+                        }
+                        
+                        else if (people.get(i).getMb().substring(0,4).equals("ESFJ") && (people.get(j).getMb().substring(0,4).equals("ISTP") || 
+                        people.get(j).getMb().substring(0,4).equals("ESTJ") || people.get(j).getMb().substring(0,4).equals("ESTP"))) {
+                            counter += 10;
+                        }
+
+                        else if (people.get(i).getMb().substring(0,4).equals("ISTJ") && (people.get(j).getMb().substring(0,4).equals("INFJ") || 
+                        people.get(j).getMb().substring(0,4).equals("ISTP") || people.get(j).getMb().substring(0,4).equals("ISFJ"))) {
+                            counter += 10;
+                        }
+
+                        else if (people.get(i).getMb().substring(0,4).equals("ISTP") && (people.get(j).getMb().substring(0,4).equals("ISFP") || 
+                        people.get(j).getMb().substring(0,4).equals("INFP") || people.get(j).getMb().substring(0,4).equals("ESFP"))) {
+                            counter += 10;
+                        }
+
+                        else if (people.get(i).getMb().substring(0,4).equals("ISFJ") && (people.get(j).getMb().substring(0,4).equals("ESFJ") || 
+                        people.get(j).getMb().substring(0,4).equals("ISFP") || people.get(j).getMb().substring(0,4).equals("ISTJ"))) {
+                            counter += 10;
+                        }
+
+                        else if (people.get(i).getMb().substring(0,4).equals("ISFP") && (people.get(j).getMb().substring(0,4).equals("ESFP") || 
+                        people.get(j).getMb().substring(0,4).equals("ISFJ") || people.get(j).getMb().substring(0,4).equals("ESFJ"))) {
+                            counter += 10;
+                        }
+
+                        else if (people.get(i).getMb().substring(0,4).equals("ENTJ") && (people.get(j).getMb().substring(0,4).equals("INTJ") || 
+                        people.get(j).getMb().substring(0,4).equals("ENTP") || people.get(j).getMb().substring(0,4).equals("ENFJ"))) {
+                            counter += 10;
+                        }
+
+                        else if (people.get(i).getMb().substring(0,4).equals("ENTP") && (people.get(j).getMb().substring(0,4).equals("ENTJ") || 
+                        people.get(j).getMb().substring(0,4).equals("ENFP") || people.get(j).getMb().substring(0,4).equals("ENFJ"))) {
+                            counter += 10;
+                        }
+
+                        else if (people.get(i).getMb().substring(0,4).equals("ENFJ") && || (people.get(j).getMb().substring(0,4).equals("INFJ") ||
+                        people.get(j).getMb().substring(0,4).equals("ENFP"))) {
+                            counter += 10;
+                        }
+
+                        else if (people.get(i).getMb().substring(0,4).equals("ENFP") && (people.get(j).getMb().substring(0,4).equals("ENTJ") || 
+                        people.get(j).getMb().substring(0,4).equals("INTJ") || people.get(j).getMb().substring(0,4).equals("INTP"))) {
+                            counter += 10;
+                        }
+                        
+                        else if (people.get(i).getMb().substring(0,4).equals("INTJ") && (people.get(j).getMb().substring(0,4).equals("INTP") || 
+                        people.get(j).getMb().substring(0,4).equals("INFJ") || people.get(j).getMb().substring(0,4).equals("INFP"))) {
+                            counter += 10;
+                        }
+
+                        else if (people.get(i).getMb().substring(0,4).equals("INTP") && (people.get(j).getMb().substring(0,4).equals("ENTP") || 
+                        people.get(j).getMb().substring(0,4).equals("INFP") || people.get(j).getMb().substring(0,4).equals("ENFP"))) {
+                            counter += 10;
+                        }
+
+                        else if (people.get(i).getMb().substring(0,4).equals("INFJ") && (people.get(j).getMb().substring(0,4).equals("ISTJ") || 
+                        people.get(j).getMb().substring(0,4).equals("INFP") || people.get(j).getMb().substring(0,4).equals("INTJ"))) {
+                            counter += 10;
+                        }
+
+                        else if (people.get(i).getMb().substring(0,4).equals("INFP") && (people.get(j).getMb().substring(0,4).equals("INFJ") || 
+                        people.get(j).getMb().substring(0,4).equals("ISFJ") || people.get(j).getMb().substring(0,4).equals("ENFJ"))) {
+                            counter += 10;
+                        }
+
+                        if (people.get(i).getIs().equals(people.get(j).getIs())) {
+                            counter+=6;
+                        }
+
+                      //  else if (STARTING WITH ISLAND STUFF)
+                    }
+                }
+
+               if (counter > bestMatch) {
+                   pos = j;
+                   bestMatch = counter;
+                }
+               counter = 0;
+            }
+            b1.add(people.get(pos));
+            bestMatch = 0;
+            pos = 0; 
+        }
+        //tester purposes
+        for (int x = 0; x < b1.size(); x++) {
+            System.out.println(b1.get(x).getName());
+        }
+    }
+
     public void worstMatch1() {
         int bestMatch = 0; // greatest number
         int counter = 0; // main counter
