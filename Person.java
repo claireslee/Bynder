@@ -1,9 +1,7 @@
-package Bynder;
-
 import java.net.*;
 import java.util.ArrayList;
 import java.io.*;
-public class Person extends ReadURL {
+public class Person {
 
     String n;
     String a;
