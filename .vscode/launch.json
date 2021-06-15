@@ -1,0 +1,42 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}",
+            "vmArgs": "--module-path \"C:\\javafx-sdk-17\\lib\" --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "Launch Display",
+            "request": "launch",
+            "mainClass": "Display",
+            "projectName": "Bynder_439ad2ae"
+        },
+        {
+            "type": "java",
+            "name": "Launch Matches",
+            "request": "launch",
+            "mainClass": "Matches",
+            "projectName": "Bynder_439ad2ae"
+        },
+        {
+            "type": "java",
+            "name": "Launch tester",
+            "request": "launch",
+            "mainClass": "tester",
+            "projectName": "Bynder_439ad2ae"
+        },
+        {
+            "type": "java",
+            "name": "Launch pract",
+            "request": "launch",
+            "mainClass": "practiceCodes_Chapter11.pract"
+        }
+    ]
+}

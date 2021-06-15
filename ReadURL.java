@@ -27,8 +27,8 @@ public class ReadURL {
             hobbies1.add(arr[3]);
             hobbies2.add(arr[4]);
             movie.add(arr[5]);
-            insideChar.add(arr[6]);
-            mbti.add(arr[7]);
+            mbti.add(arr[6]);
+            insideChar.add(arr[7]);
             island.add(arr[8]);
         }
 
@@ -37,8 +37,8 @@ public class ReadURL {
         // System.out.println(hobbies1);
         // System.out.println(hobbies2);
         // System.out.println(movie);
-        // System.out.println(insideChar);
         // System.out.println(mbti);
+        // System.out.println(insideChar);
         // System.out.println(island);
 
         read.close();

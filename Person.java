@@ -8,18 +8,18 @@ public class Person {
     String h1;
     String h2;
     String m;
-    String ic;
     String mb;
+    String ic;
     String is;
 
-    public Person(String n, String a, String h1, String h2, String m, String ic, String mb, String is) {
+    public Person(String n, String a, String h1, String h2, String m, String mb, String ic, String is) {
         this.n = n;
         this.a = a;
         this.h1 = h1;
         this.h2 = h2;
         this.m = m;
-        this.ic = ic;
         this.mb = mb;
+        this.ic = ic;
         this.is = is;
     }
 
@@ -43,12 +43,12 @@ public class Person {
         return m;
     }
 
-    public String getIc() {
-        return ic;
-    }
-
     public String getMb() {
         return mb;
+    }
+
+    public String getIc() {
+        return ic;
     }
 
     public String getIs() {

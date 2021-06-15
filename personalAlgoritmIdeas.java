@@ -28,3 +28,8 @@
 // photography + tiktok/social media (vice versa)
 // baking/cooking + traveling (vice versa)
 // sleeping + watching movies (vice versa)
+
+//FORMAT ->
+//Stage will be filled in with yellow as the bored
+// Scene is where the titles and subtitles are 
+// nodes are where the matches will be printed
