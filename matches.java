@@ -79,6 +79,7 @@ public class Matches extends ReadURL {
                     (people.get(i).getAge() == people.get(j).getAge() + 1) || 
                     (people.get(i).getAge() == people.get(j).getAge() - 1)) {
 
+                        // MB
                         if (people.get(i).getMb().equals(people.get(j).getMb())) {
                             counter+=10;
                         }
@@ -163,11 +164,42 @@ public class Matches extends ReadURL {
                             counter += 10;
                         }
 
+                        // ISLAND
                         if (people.get(i).getIs().equals(people.get(j).getIs())) {
                             counter+=6;
                         }
 
-                      //  else if (STARTING WITH ISLAND STUFF)
+                        else if (people.get(i).getIs().substring(0,1).equals("p") && (people.get(j).getIs().substring(0,4).equals("y"))) {
+                            counter += 6;
+                        }
+
+                        else if (people.get(i).getIs().substring(0,1).equals("d") && (people.get(j).getIs().substring(0,4).equals("f"))) {
+                            counter += 6;
+                        }
+
+                        else if (people.get(i).getIs().substring(0,1).equals("f") && (people.get(j).getIs().substring(0,4).equals("d"))) {
+                            counter += 6;
+                        }
+
+                        else if (people.get(i).getIs().substring(0,1).equals("s") && (people.get(j).getIs().substring(0,4).equals("a"))) {
+                            counter += 6;
+                        }
+
+                        else if (people.get(i).getIs().substring(0,1).equals("a") && (people.get(j).getIs().substring(0,4).equals("s"))) {
+                            counter += 6;
+                        }
+
+                        else if (people.get(i).getIs().substring(0,1).equals("y") && (people.get(j).getIs().substring(0,4).equals("p"))) {
+                            counter += 6;
+                        }
+
+                        // INSIDE OUT CHAR
+                        if (people.get(i).getIc().equals(people.get(j).getIc())) {
+                            counter += 4;
+                        }
+
+                        // else if (DECIDE ON IC PAIRINGS)
+
                     }
                 }
 
